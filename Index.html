@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Prediction Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Crypto Prediction Dashboard</h1>
+    </header>
+    <div class="top-bar">
+        <div class="converter">
+            <label for="usd">USD:</label>
+            <input type="number" id="usd" placeholder="USD" oninput="convertCurrency('usd')">
+            <label for="zar">ZAR:</label>
+            <input type="number" id="zar" placeholder="ZAR" oninput="convertCurrency('zar')">
+        </div>
+        <div class="search">
+            <input type="text" id="searchInput" onkeyup="searchCoins()" placeholder="Search for coins...">
+        </div>
+    </div>
+    <div class="iframe-container" data-coin="bitcoin" data-abbr="btc">
+        <iframe src="https://coincodex.com/crypto/bitcoin/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="ethereum" data-abbr="eth">
+        <iframe src="https://coincodex.com/crypto/ethereum/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="xrp" data-abbr="xrp">
+        <iframe src="https://coincodex.com/crypto/xrp/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="solana" data-abbr="sol">
+        <iframe src="https://coincodex.com/crypto/solana/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="dogecoin" data-abbr="doge">
+        <iframe src="https://coincodex.com/crypto/dogecoin/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="the-sandbox" data-abbr="sand">
+        <iframe src="https://coincodex.com/crypto/the-sandbox/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="fantom" data-abbr="ftm">
+        <iframe src="https://coincodex.com/crypto/fantom/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="near-protocol" data-abbr="near">
+        <iframe src="https://coincodex.com/crypto/near-protocol/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="tron" data-abbr="trx">
+        <iframe src="https://coincodex.com/crypto/tron/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="synthetix" data-abbr="snx">
+        <iframe src="https://coincodex.com/crypto/synthetix/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="the-graph" data-abbr="grt">
+        <iframe src="https://coincodex.com/crypto/the-graph/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="algorand" data-abbr="algo">
+        <iframe src="https://coincodex.com/crypto/algorand/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="stellar" data-abbr="xlm">
+        <iframe src="https://coincodex.com/crypto/stellar/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="maker" data-abbr="mkr">
+        <iframe src="https://coincodex.com/crypto/maker/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="aave" data-abbr="aave">
+        <iframe src="https://coincodex.com/crypto/aave/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="curve-dao-token" data-abbr="crv">
+        <iframe src="https://coincodex.com/crypto/curve-dao-token/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="cosmos" data-abbr="atom">
+        <iframe src="https://coincodex.com/crypto/cosmos/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="polkadot" data-abbr="dot">
+        <iframe src="https://coincodex.com/crypto/polkadot/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="polygon" data-abbr="matic">
+        <iframe src="https://coincodex.com/crypto/polygon/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="avalanche" data-abbr="avax">
+        <iframe src="https://coincodex.com/crypto/avalanche/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="cardano" data-abbr="ada">
+        <iframe src="https://coincodex.com/crypto/cardano/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="chainlink" data-abbr="link">
+        <iframe src="https://coincodex.com/crypto/chainlink/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="uniswap" data-abbr="uni">
+        <iframe src="https://coincodex.com/crypto/uniswap/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="litecoin" data-abbr="ltc">
+        <iframe src="https://coincodex.com/crypto/litecoin/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="bitcoin-cash" data-abbr="bch">
+        <iframe src="https://coincodex.com/crypto/bitcoin-cash/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="usd-coin" data-abbr="usdc">
+        <iframe src="https://coincodex.com/crypto/usd-coin/price-prediction/"></iframe>
+    </div>
+    <div class="iframe-container" data-coin="tether" data-abbr="usdt">
+        <iframe src="https://coincodex.com/crypto/tether/price-prediction/"></iframe>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
