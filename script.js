@@ -1,6 +1,11 @@
-const exchangeRate = 18.5; // Example exchange rate, you can fetch real-time rates from an API
+async function getExchangeRate() {
+    const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
+    const data = await response.json();
+    return data.rates.ZAR;
+}
 
-function convertCurrency(inputId) {
+async function convertCurrency(inputId) {
+    const exchangeRate = await getExchangeRate();
     const usdInput = document.getElementById('usd');
     const zarInput = document.getElementById('zar');
     if (inputId === 'usd') {
