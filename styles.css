@@ -9,6 +9,7 @@ body {
 }
 header {
     width: 100%;
+    padding: 20px;
     text-align: center;
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -19,10 +20,12 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 .converter, .search {
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 .converter input, .search input {
     margin: 0 10px;
@@ -31,7 +34,7 @@ header {
     border-radius: 5px;
 }
 .iframe-container {
-    width: 99%;
+    width: 90%;
     margin: 10px 0;
     height: 400px;
 }
@@ -39,4 +42,19 @@ iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .converter, .search {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .iframe-container {
+        width: 100%;
+    }
 }
