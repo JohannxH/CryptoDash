@@ -7,6 +7,7 @@ body {
     align-items: center;
     font-family: Arial, sans-serif;
 }
+
 header {
     width: 100%;
     padding: 20px;
@@ -14,6 +15,7 @@ header {
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .top-bar {
     width: 90%;
     display: flex;
@@ -22,22 +24,26 @@ header {
     margin: 20px 0;
     flex-wrap: wrap;
 }
+
 .converter, .search {
     display: flex;
     align-items: center;
     margin: 10px 0;
 }
+
 .converter input, .search input {
     margin: 0 10px;
     padding: 5px;
     border: none;
     border-radius: 5px;
 }
+
 .iframe-container {
-    width: 90%;
+    width: 100%; /* Changed to 100% to span full screen width */
     margin: 10px 0;
     height: 400px;
 }
+
 iframe {
     width: 100%;
     height: 100%;
